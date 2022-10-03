@@ -5,13 +5,12 @@
 
 @font-face {
     font-family: 'sevSeg';
-    src: url(7SegmentNormalRegular-dGWK.ttf);
+    src: url(Seven\ Segment.ttf)
 }
 
 #tb_e window display {
     border-radius: 10px;
     font-family: "sevSeg";
-    font-size: 4vh;
     box-shadow: 0px 0px 10px -0px rgba(255, 255, 255, 0.293) inset;
     color: rgb(0, 48, 13);
     background-color: rgb(0, 94, 9);
@@ -23,7 +22,6 @@
     box-shadow: 0px 0px 10px -0px rgba(255, 255, 255, 0.293) inset;
     transition: 0.25s;
     color: rgb(255, 255, 255);
-    font-size: 6vh;
     font-family: "Segoe";
     background: linear-gradient(0deg, rgb(134, 134, 134) 0%, rgb(45, 45, 45) 100%);
     border-radius: 10px 10px 20px 20px;

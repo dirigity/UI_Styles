@@ -10,7 +10,6 @@
 
 #tb_md window display {
     font-family: "Roboto";
-    font-size: xx-large;
     color: rgb(0, 0, 0);
     border-bottom: rgb(36, 124, 255) 4px solid;
     background-color: rgb(255, 255, 255);
@@ -29,7 +28,6 @@
 
 #tb_md window keyboard key.num {
     box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.451);
-    font-size: 6vh;
     background: rgb(36, 124, 255);
     color: white;
 }

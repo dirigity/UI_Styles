@@ -1,77 +1,170 @@
-playground {
-    display: inline-block;
-    height: 100vh;
-    width: 80vw;
-    position: absolute;
-}
-
 body {
     margin: 0;
     padding: 0;
     overflow: clip;
+    font-family: sans-serif;
 }
 
-controls {
-    display: inline-block;
-    height: 100vh;
-    width: calc(20vw - 16px);
-    position: absolute;
-    margin-left: 80vw;
-    padding: 4px;
+@media only screen and (orientation: portrait) {
+    playground {
+        display: inline-block;
+        top: 20vh;
+        height: 80vh;
+        width: 100vw;
+        position: absolute;
+    }
+    controls {
+        display: inline-block;
+        height: 20vh;
+        width: 100vw;
+        position: absolute;
+        padding: 4px;
+    }
+    themeBox {
+        height: 60vh;
+        user-select: none;
+        width: 80vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    controls button {
+        height: fit-content;
+        font-size: 2.2vh;
+        width: fit-content;
+        text-align: center;
+        margin: 4px;
+        padding: 4px;
+    }
+    window {
+        display: block;
+        height: 60vh;
+        width: 80vw;
+        border: 2px black solid;
+    }
+    keyboard {
+        /* border: 2px black solid; */
+        display: block;
+        margin-top: 7vh;
+        margin-left: 10vw;
+        width: 60vw;
+        height: 30vh;
+    }
+    display {
+        margin-top: 7vh;
+        margin-left: 5vw;
+        width: calc(70vw - 20px);
+        height: 8vh;
+        padding-right: 20px;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: right;
+    }
+    display.fixedsys-default,
+    display {
+        font-size: 4vh !important;
+    }
+    .backdrop {
+        position: absolute;
+        height: 80vh;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        z-index: -100;
+        image-rendering: pixelated;
+        object-fit: cover;
+    }
+    key.fixedsys-default,
+    key {
+        font-size: 4vh !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-controls button {
-    height: 10vh;
-    font-size: 3vh;
-    width: 100%;
-    text-align: center;
-    margin: 4px;
-    padding: 4px;
-}
-
-themeBox {
-    user-select: none;
-    width: 60vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
-lable {
-    font-size: 4vh;
-    text-align: center;
-    display: block;
-    height: 5vh;
-}
-
-window {
-    display: block;
-    height: 75vh;
-    width: 60vw;
-    border: 2px black solid;
-}
-
-display {
-    margin-top: 7vh;
-    margin-left: 5vw;
-    width: calc(50vw - 20px);
-    height: 8vh;
-    padding-right: 20px;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: right;
-}
-
-keyboard {
-    /* border: 2px black solid; */
-    display: block;
-    margin-top: 7vh;
-    margin-left: 10vw;
-    width: 40vw;
-    height: 45vh;
+@media only screen and (orientation: landscape) {
+    playground {
+        display: inline-block;
+        height: 100vh;
+        width: 80vw;
+        position: absolute;
+    }
+    controls {
+        display: inline-block;
+        height: 100vh;
+        width: calc(20vw - 16px);
+        position: absolute;
+        margin-left: 80vw;
+        padding: 4px;
+    }
+    themeBox {
+        user-select: none;
+        width: 60vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    controls button {
+        height: 10vh;
+        font-size: 3vh;
+        width: 100%;
+        text-align: center;
+        margin: 4px;
+        padding: 4px;
+    }
+    window {
+        display: block;
+        height: 80vh;
+        width: 60vw;
+        border: 2px black solid;
+    }
+    keyboard {
+        /* border: 2px black solid; */
+        display: block;
+        margin-top: 7vh;
+        margin-left: 10vw;
+        width: 40vw;
+        height: 50vh;
+    }
+    display {
+        margin-top: 7vh;
+        margin-left: 5vw;
+        width: calc(50vw - 20px);
+        height: 8vh;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: right;
+    }
+    display.fixedsys-default,
+    display {
+        font-size: 5vh !important;
+    }
+    .backdrop {
+        position: absolute;
+        height: 100vh;
+        width: 80vw;
+        left: 0;
+        top: 0;
+        z-index: -100;
+        image-rendering: pixelated;
+        object-fit: cover;
+    }
+    key.fixedsys-default,
+    key {
+        font-size: 5vh !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .angry-grid {
@@ -171,12 +264,4 @@ keyboard {
 #item-17 {
     background-color: #9A957D;
     grid-area: dot;
-}
-
-key {
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
 }

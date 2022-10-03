@@ -1,0 +1,10 @@
+controls button.setted {
+    background-color: rgb(112, 112, 112);
+    color: white
+}
+
+controls button {
+    border: 1px black solid;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}

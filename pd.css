@@ -9,7 +9,6 @@
 
 #tb_pd window display {
     font-family: "Segoe";
-    font-size: xx-large;
     color: white;
     border-bottom: rgb(255, 70, 70) 2px solid;
     background-color: rgb(68, 68, 68);
@@ -26,7 +25,6 @@
 }
 
 #tb_pd window keyboard key.num {
-    font-size: 6vh;
     color: white;
 }
 
