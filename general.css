@@ -1,0 +1,182 @@
+playground {
+    display: inline-block;
+    height: 100vh;
+    width: 80vw;
+    position: absolute;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: clip;
+}
+
+controls {
+    display: inline-block;
+    height: 100vh;
+    width: calc(20vw - 16px);
+    position: absolute;
+    margin-left: 80vw;
+    padding: 4px;
+}
+
+controls button {
+    height: 10vh;
+    font-size: 3vh;
+    width: 100%;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+themeBox {
+    user-select: none;
+    width: 60vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+lable {
+    font-size: 4vh;
+    text-align: center;
+    display: block;
+    height: 5vh;
+}
+
+window {
+    display: block;
+    height: 75vh;
+    width: 60vw;
+    border: 2px black solid;
+}
+
+display {
+    margin-top: 7vh;
+    margin-left: 5vw;
+    width: calc(50vw - 20px);
+    height: 8vh;
+    padding-right: 20px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+keyboard {
+    /* border: 2px black solid; */
+    display: block;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    width: 40vw;
+    height: 45vh;
+}
+
+.angry-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'one two thr div del' 'fou fiv six tim ac' 'sev eig nin sub eq' 'cer dot .   add eq';
+    gap: 0px;
+    height: 100%;
+}
+
+#item-0 {
+    background-color: #ffd6df;
+    grid-area: one;
+}
+
+#item-1 {
+    background-color: #759977;
+    grid-area: two;
+}
+
+#item-2 {
+    background-color: #c9cc9d;
+    grid-area: thr;
+}
+
+#item-3 {
+    background-color: #59F959;
+    grid-area: fou;
+}
+
+#item-4 {
+    background-color: #A9BEE5;
+    grid-area: fiv;
+}
+
+#item-5 {
+    background-color: #A76FB7;
+    grid-area: six;
+}
+
+#item-6 {
+    background-color: #9868EA;
+    grid-area: sev;
+}
+
+#item-7 {
+    background-color: #65895E;
+    grid-area: eig;
+}
+
+#item-8 {
+    background-color: #67597B;
+    grid-area: nin;
+}
+
+#item-9 {
+    background-color: #595E5D;
+    grid-area: cer;
+}
+
+#item-10 {
+    background-color: #7BBDDD;
+    grid-area: add;
+}
+
+#item-11 {
+    background-color: #DAB99E;
+    grid-area: sub;
+}
+
+#item-12 {
+    background-color: #6DB55A;
+    grid-area: div;
+}
+
+#item-13 {
+    background-color: #D96C78;
+    grid-area: tim;
+}
+
+#item-14 {
+    background-color: #7F7BD9;
+    grid-area: del;
+}
+
+#item-15 {
+    background-color: #B8F89F;
+    grid-area: ac;
+}
+
+#item-16 {
+    background-color: #E9567C;
+    grid-area: eq;
+}
+
+#item-17 {
+    background-color: #9A957D;
+    grid-area: dot;
+}
+
+key {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

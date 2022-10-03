@@ -1,0 +1,45 @@
+#tb_fd window {
+    background-color: rgb(37, 37, 37);
+}
+
+@font-face {
+    font-family: 'Segoe';
+    src: url(SEGOEUI.TTF);
+}
+
+#tb_fd window display {
+    font-family: "Segoe";
+    font-size: xx-large;
+    color: white;
+}
+
+#tb_fd window keyboard {}
+
+#tb_fd window keyboard key {
+    transition: 0.25s;
+    color: white;
+    font-family: "Segoe";
+    background: rgb(47, 47, 47);
+    margin: 2px;
+}
+
+#tb_fd window keyboard key.num {
+    font-size: 6vh;
+    background: rgb(7, 7, 7);
+}
+
+#tb_fd window keyboard key#item-16 {
+    background: rgb(105, 105, 105);
+}
+
+#tb_fd window keyboard key:hover,
+#tb_fd window keyboard key#item-16:hover {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.304);
+    background: rgb(163, 163, 163);
+}
+
+#tb_fd window keyboard key:active,
+#tb_fd window keyboard key#item-16:active {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.304);
+    background: rgb(201, 201, 201);
+}

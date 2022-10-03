@@ -1,0 +1,58 @@
+#tb_g window {
+    backdrop-filter: blur(10px);
+    background-color: rgba(37, 37, 37, 0.255);
+}
+
+@font-face {
+    font-family: 'Segoe';
+    src: url(SEGOEUI.TTF);
+}
+
+#tb_g window display {
+    font-family: "Segoe";
+    font-size: xx-large;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.611);
+}
+
+#tb_g window keyboard {}
+
+.backdrop {
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+#tb_g window keyboard key {
+    transition: 0.25s;
+    color: white;
+    font-family: "Segoe";
+    background: rgba(47, 47, 47, 0.432);
+    margin: 2px;
+}
+
+#tb_g window keyboard key.num {
+    font-size: 6vh;
+    background: rgb(7, 7, 7);
+}
+
+#tb_g window keyboard key#item-16 {
+    background: rgb(105, 105, 105);
+}
+
+#tb_g window keyboard key:hover,
+#tb_g window keyboard key#item-16:hover {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.304);
+    background: rgba(163, 163, 163, 0.323);
+}
+
+#tb_g window keyboard key:active,
+#tb_g window keyboard key#item-16:active {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.304);
+    background: rgba(201, 201, 201, 0.315);
+}
